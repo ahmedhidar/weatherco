@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>hidar project</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container my-5">
+          <a class="navbar-brand fw-bolder fs-3" href="#">weather<span class="text-info fw-bolder fs-3">co</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class=" w-100 vh-75 d-block">
+        <div class=" container p-2">
+          <input id="search" class="inputSearch w-100 form-control rounded-5 my-5" type="search" placeholder="find your location">
+          <!-- !weather cards -->
+          <div class="weatherCards">
+           <!-- ^ card1 -->
+            <div class="card1 cardd">
+              <div class="dateDiv">
+                <div><p id="dayName"> tuesday</p></div>
+                <div><p><span id="todayDayNumber"></span><span id="todayMonth"></span></p></div>
+              </div>
+              <p id="city" class="fs-3">city</p>
+              <div class="tempDeg column">
+                <div><img  id="todayTempPic" src=""></div>
+                <div><p id="todayTemp">17c</p></div>
+
+              </div>
+              <p id="todayWeather" class="fs-3 text-info">cloudy</p>
+              <div class="weatherConditions">
+                <div class="p-2">
+                  <img src="img/icon-umberella.png" >
+                  <p id="humidity" class="d-inline"></p>
+                </div>
+                <div class="p-2">
+                  <img src="img/icon-wind.png">
+                  <p id="wind" class="d-inline"></p>
+                </div>
+                <div class="p-2">
+                  <img src="img/icon-compass.png">
+                  <p id="wind-direction" class="d-inline"></p>
+                </div>
+              </div>
+              
+
+            </div>
+            <!-- ^ card2 -->
+            <div class="card2 cardd">
+              <div class="dateDiv dateDiv2">
+                <div>
+                <p class="nextDay">tuesday</p>
+                </div>
+              </div>
+              <img class="next-condition-img py-2" src="img/113.png">
+              <p class="maxTemp fs-4 py-2">17</p>
+              <p class="minTemp fs-4 py-2">15</p>
+              <p class="next-condition-text text-info fs-4 py-2">overcast</p>
+            </div>
+            <!-- ^ card3 -->
+            <div class="card3 cardd">
+              <div class="dateDiv dateDiv3">
+                <div>
+                  <p class="nextDay">tuesday</p>
+                </div>
+              </div>
+              <img class="next-condition-img py-2" src="img/113.png">
+              <p class="maxTemp fs-4 py-2">17</p>
+              <p class="minTemp fs-4 py-2">15</p>
+              <p class="next-condition-text fs-4 text-info py-2">overcast</p>
+            </div>
+
+          </div>
+        
+        </div>
+
+
+      </header>
+<footer class="w-100  bg-black">
+
+</footer>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
